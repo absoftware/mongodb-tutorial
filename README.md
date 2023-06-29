@@ -1,7 +1,8 @@
 
 # MongoDB tutorial
 
-Based on [MongoDB Manual](https://www.mongodb.com/docs/manual/).
+Follow lessons from [MongoDB Manual](https://www.mongodb.com/docs/manual/)
+after installation.
 
 ## Installation with Vagrant
 
@@ -18,13 +19,19 @@ vagrant up
 
 You will get running virtual machine with IP address
 specified in [vagrant/Vagrantfile](vagrant/Vagrantfile).
-Login to the Ubuntu's shell:
+Add this IP on your host system to file `/etc/hosts`:
+
+```
+192.168.56.30 mongodb.vm
+```
+
+Login to the guest's shell:
 
 ```
 vagrant ssh
 ```
 
-Open shell:
+Open MongoDB Shell:
 
 ```
 mongosh
